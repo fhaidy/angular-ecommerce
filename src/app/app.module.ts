@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {APP_BASE_HREF} from '@angular/common';
+import {APP_BASE_HREF, registerLocaleData} from '@angular/common';
 import { AppComponent } from './app.component';
 import { MenuComponent } from './navegacao/menu/menu.component';
 import { HomeComponent } from './navegacao/home/home.component';
@@ -14,6 +14,8 @@ import { FormsModule} from '@angular/forms'
 import { ProdutoService } from './produtos/produtos.service';
 import { ListaProdutoComponent } from './produtos/lista-produto/lista-produto.component';
 import { HttpClientModule } from '@angular/common/http';
+import localePt from '@angular/common/locales/pt';
+registerLocaleData(localePt);
 
 @NgModule({
   declarations: [
